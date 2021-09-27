@@ -1,0 +1,36 @@
+#to know file type
+1. file /etc/passwd
+
+#search word or pattern in a file
+2. grep root/etc/passwd
+
+#to see password info
+3. chage -l user1
+
+#modify existing user
+4. usermod -c "system config" user1
+   grep user1 /etc/passwd
+
+#lock and unlock the user
+5. usermod -L user1
+   grep user1 /etc/shadow
+
+6. usermod -U user1
+   grep user1 /etc/shadow
+
+#delete user
+7. userdel user1
+   ls
+
+#to know currently logged in user info
+8. id
+   id user1
+
+#create group and verify
+9. groupadd ansible
+   grep ansible /etc/group
+
+#to enable sshd service
+10. systemctl enable sshd.service
+
+
